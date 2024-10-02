@@ -1,0 +1,40 @@
+#whatsMore {
+    margin: 0rem 5rem 0rem 5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh fit-content;
+    /* background-color: red; */
+}
+#whatsMore.scrolly {
+    margin: 5rem 5rem 0rem 5rem;
+}
+#whatsMore img {
+    align-self: center;
+    width: 65%;
+    margin: 0 0 1rem 0;
+    border-radius: 2rem;
+
+}
+
+
+#whatsMore h1 {
+    font-size: var(--heading-1);
+    margin: 3.5rem 0 2rem 0;
+    
+
+}
+#whatsMore ul h2 {
+    width: fit-content;
+    font-size: var(--heading-2);
+    background: -webkit-linear-gradient(112.1deg,  rgb(63, 76, 119) 11.4%,rgb(32, 38, 57) 70.2%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#whatsMore ul h2{
+    margin: 0 0 1rem 3rem;
+}
+#whatsMore ul p {
+    text-indent: 3rem;
+    margin: 2rem 5rem 1rem 3rem;
+}

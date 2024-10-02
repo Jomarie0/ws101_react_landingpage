@@ -1,0 +1,107 @@
+:root {
+    /* ============ COLORS ============ */
+        --dominant-color: #EEEEEE;
+        --secondary-color: #134B70;
+        --accent-color: #f1c40f  ;
+        --accent-color1: #1E3A8A;
+        --accent-color2: #  ;
+        --font-color: #201E43;
+        --default-font-color: #1b1b1b;
+        --font-less-opacity: #555555;
+    
+    
+    
+    
+    
+    /* ============ FONT CHOICES ============ */
+        --poppins: "Poppins";
+    
+    /* ============ FONT SIZES ============ */
+        --smaller: 0.9em;
+        --default: 1em;
+        --nav-font-size: 1.4em;
+        --heading-1: 2.8em; 
+        --heading-2: 2em;
+    }
+
+
+#heroSec {
+    margin: -3.5rem 0rem 0rem 0rem;
+    display: flex;
+    height: 100vh;
+    background-image: url('./bg-img2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#heroSec aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#heroSec aside h1 {
+    font-size: var(--heading-1);
+    margin: 8rem 0 0 0;
+    color: var(--dominant-color);
+
+}
+#heroSec aside h3 {
+    font-size: var(--nav-font-size);
+    font-weight: 600;
+    margin: 0;
+    color: var(--dominant-color);
+}
+#heroSec aside p {
+    font-size: var(--smaller);
+    margin: 2.5rem 23% 3rem 23%;
+    text-indent: 2rem;
+    color: var(--dominant-color);
+
+}
+
+.button-89 {
+    --b: 3px;   
+    --s: .45em; 
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--accent-color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--accent-color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+    font-weight: 600;
+  
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .button-89 span {
+      font-weight: 500;
+  }
+  
+  .button-89:hover,
+  .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--accent-color);
+    font-weight: 600;
+  
+    outline-offset: .05em;
+  }
+  
+  .button-89:active {
+    background: var(--accent-color);
+    font-weight: 600;
+    color: #fff;
+  }
+

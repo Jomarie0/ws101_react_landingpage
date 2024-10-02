@@ -1,0 +1,144 @@
+html,
+body {
+    padding:0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: var(--poppins);
+}
+body {
+    background: var(--dominant-color);
+}
+
+:root {
+/* ============ COLORS ============ */
+    --dominant-color: #EEEEEE;
+    --secondary-color: #134B70;
+    --accent-color: #f1c40f  ;
+    --accent-color1: #1E3A8A;
+    --accent-color2: #  ;
+    --font-color: #201E43;
+    --default-font-color: #1b1b1b;
+    --font-less-opacity: #555555;
+
+
+
+
+
+/* ============ FONT CHOICES ============ */
+    --poppins: "Poppins";
+
+/* ============ FONT SIZES ============ */
+    --smaller: 0.9em;
+    --default: 1em;
+    --nav-font-size: 1.4em;
+    --heading-1: 2.8em; 
+    --heading-2: 2em;
+}
+.highlight {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+.highlight-1 {
+    color: var(--accent-color1);
+    font-weight: bold;
+}
+.gradient-text {
+    background: -webkit-linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold; 
+}
+.gradient-1 {
+    background: -webkit-linear-gradient(109.6deg, rgb(177, 173, 219) 11.2%, rgb(245, 226, 226) 91.1%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold; 
+}
+header {
+    width: 100%;
+    display: flex;
+    height: 3.5rem;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--dominant-color);
+    background: #eeeeee00;
+    position: sticky;
+    top: 0;
+    /* background: var(--dominant-color); */
+    transition: all 0.5s ease-in-out;
+}
+header.scrolled {
+    color: var(--default-font-color);
+    background: var(--dominant-color);    
+    opacity: 0.98;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+  }
+header.scrolled ul li a {
+    color: var(--default-font-color);
+
+}
+
+/* ====================================  NAVIGATION BAR ====================================  */
+
+header ul {
+    /* background: var(--accent-color); */
+
+    list-style: none;
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+    padding-left: 0%;
+    
+}
+header ul li a{
+    text-decoration: none;
+    color: var(--dominant-color);
+    font-size: var(--default);
+
+    /* background: var(--font-color); */
+}
+
+header ul li span {
+    position: relative;
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    margin: 1%;
+    display: none;
+    position: absolute;
+    height: fit-content;
+    width: 21vw;
+    background-color: #EEEEEE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: var(--smaller);
+    color: var(--default-font-color);
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+  }
+  .dropdown-content li:hover {
+    background: #dbdbdb;
+    
+  }
+  .dropdown-content li,
+  .dropdown-content li a {
+    padding: 5%;
+    color: var(--default-font-color);
+
+    
+  }

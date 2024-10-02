@@ -1,0 +1,112 @@
+#History {
+    margin-top: 3rem;
+    height: 80vh; 
+    overflow-y: auto; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    display: flex;
+    flex-direction: column;
+}
+#History h1 {
+    text-align: center;
+
+    margin: 4rem 0 1rem 3rem;
+    font-size: var(--heading-1);
+}
+
+.timeline {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(43, 43, 43);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 40%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -2%;
+    background-color: white;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 2.8%;
+}
+.left div {
+    background-color: var(--dominant-color);
+    color: var(--default-font-color);
+}
+.left div h2 {
+    color: var(--secondary-color);
+}
+
+.right {
+    left: 49.7%;
+}
+.right div {
+    background-color: rgb(59, 72, 252);
+    color: white;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--dominant-color);
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(59, 72, 252) transparent transparent;
+}
+
+.right::after {
+    left: -1.7%;
+    background-color: rgb(59, 72, 252);
+}
+.left::after {
+    background-color: rgb(16, 26, 163);
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
